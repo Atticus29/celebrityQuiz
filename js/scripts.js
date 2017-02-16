@@ -1,6 +1,3 @@
-
-
-
 $(function(){
   $("form#cel").submit(function(){
     event.preventDefault();
