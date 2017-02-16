@@ -5,9 +5,118 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title></title>
+  <title>Celebrity Dating Quiz</title>
 </head>
 <body>
-
+  <div class="container">
+    <h1>Welcome to Celebrity dating quiz!</h1>
+    <form id="cel">
+      <div class="form-group">
+        <label for="user">Name</label>
+        <input type="text" class="form-control" id="user" >
+      </div>
+      <div class="form-group">
+        <h3>I prefer...</h3>
+        <div class="radio">
+          <label><input type="radio" name="gender" value="male">Male</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="gender" value="female">Female</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="gender" value="binary">Non-binary</label>
+        </div>
+        <div class="radio">
+      </div>
+      <div class="form-group">
+        <h3>My age is...</h3>
+        <div class="radio">
+          <label><input type="radio" name="age" value="old">Over 21</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="age" value="young">Under 21</label>
+        </div>
+        <div class="radio">
+      </div>
+      <div class="form-group">
+        <h3>My favorite candy</h3>
+        <div class="radio">
+          <label><input type="radio" name="candy" value="candy1">Twix</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="candy" value="candy2">Not a fan of candies...</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="candy" value="candy3">Sugar is bad</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <h3>My favorite PowerRanger</h3>
+        <div class="radio">
+          <label><input type="radio" name="ranger" value="red">Red Ranger</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="ranger" value="pink">Pink Ranger</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="ranger" value="blue">Blue Ranger</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <h3>My favorite places to travel</h3>
+        <select class="form-control" id="travel">
+          <option>North Korea</option>
+          <option>My yard</option>
+          <option>null</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success" name="button">Submit</button>
+    </form>
+    <div class="output">
+      <h1>Hi, <span id="name"></span>! your matching celebrity is...</h1>
+        <div class="celebrities">
+          <ul>
+            <li id="1">
+              <h3>Samuel Jackson</h3>
+              <img src="img/samuel.jpg">
+            </li>
+            <li id="2">
+              <h3>William Shatner</h3>
+              <img src="img/cap.jpg">
+            </li>
+            <li id="3">
+              <h3>Emma Watson</h3>
+              <img src="img/emma.jpg">
+            </li>
+            <li id="4">
+              <h3>Justin Bieber</h3>
+              <img src="img/justin.jpg">
+            </li>
+            <li id="5">
+              <h3>I'm sorry, but you are unmatchable...</h3>
+              <img src="img/warning.png">
+            </li>
+            <li id="6">
+              <h3>Miley Cyrus</h3>
+              <img src="img/miley.jpg">
+            </li>
+            <li id="7">
+              <h3>Jonas Brothers</h3>
+              <img src="img/jonas.jpg">
+            </li>
+            <li id="8">
+              <h3>Zac Efron</h3>
+              <img src="img/zac.jpg">
+            </li>
+            <li id="9">
+              <h3>Selena Gomez</h3>
+              <img src="img/sel.jpg">
+            </li>
+          </ul>
+        </div>
+      <div class="content">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
